@@ -5,6 +5,7 @@ import org.gradle.kotlin.dsl.signing
 import java.util.*
 
 plugins {
+    `version-catalog`
     `maven-publish`
     signing
 }
@@ -40,6 +41,9 @@ val javadocJar by tasks.registering(Jar::class) {
 
 fun getExtraString(name: String) = ext[name]?.toString()
 
+group = "com.intsoftdev"
+version = "0.01-SNAPSHOT"
+
 publishing {
     // Configure maven central repository
     repositories {
@@ -47,6 +51,7 @@ publishing {
             name = "sonatype"
             val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+            println("version is $version")
             url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
                 username = getExtraString("ossrhUsername")
@@ -57,14 +62,13 @@ publishing {
 
     // Configure all publications
     publications.withType<MavenPublication> {
-
         // Stub javadoc.jar artifact
         artifact(javadocJar.get())
 
         // Provide artifacts information requited by Maven Central
         pom {
-            name.set("NRStations KMP library")
-            description.set("Multiplatform SDK to retrieve all the national rail stations in the UK")
+            name.set("ISD Dependencies")
+            description.set("Gradle version catalog dependencies")
             url.set("https://github.com/IntSoftDev/isddependencies")
 
             licenses {
@@ -83,7 +87,6 @@ publishing {
             scm {
                 url.set("https://github.com/IntSoftDev/isddependencies")
             }
-
         }
     }
 }

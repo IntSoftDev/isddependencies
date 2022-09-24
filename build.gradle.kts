@@ -1,9 +1,8 @@
-group = "com.intsoftdev"
-version = "0.01-SNAPSHOT"
 
 plugins {
     `version-catalog`
     `maven-publish`
+    id("convention.publication")
 }
 
 catalog {
