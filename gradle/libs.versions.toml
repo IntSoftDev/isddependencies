@@ -15,12 +15,13 @@ lifecycle = "2.4.1"
 multiplatformSettings = "0.9"
 navigation = "2.3.5"
 sqlDelight = "1.5.3"
-sdkstations = "0.625-SNAPSHOT"
+sdkstations = "3.0.1-SNAPSHOT"
+sdkservices = "3.0.1-SNAPSHOT"
 
 [libraries]
 # 1st party libs
 intsoftdev-stations = { module = "com.intsoftdev:sdknrstations", version.ref = "sdkstations" }
-intsoftdev-services = { module = "com.intsoftdev:sdknrservices", version = "0.11" }
+intsoftdev-services = { module = "com.intsoftdev:sdknrservices", version.ref = "sdkservices" }
 
 # Google Maps and permissions
 google_gms_maps = { module = "com.google.android.gms:play-services-maps", version = "17.0.0" }
