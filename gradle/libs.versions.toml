@@ -15,8 +15,8 @@ lifecycle = "2.4.1"
 multiplatformSettings = "0.9"
 navigation = "2.3.5"
 sqlDelight = "1.5.3"
-sdkstations = "3.0.1-SNAPSHOT"
-sdkservices = "3.0.2-SNAPSHOT"
+sdkstations = "3.0.2"
+sdkservices = "3.0.3"
 
 [libraries]
 # 1st party libs
