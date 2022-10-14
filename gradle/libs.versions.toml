@@ -30,7 +30,7 @@ googleServices = "4.3.14"
 gradleVersions = "0.42.0"
 junit = "4.13.2"
 ktlintGradle = "11.0.0"
-roboelectric = "4.7.3"
+roboelectric = "4.8.2"
 timber = "5.0.1"
 
 # AndroidX
@@ -45,7 +45,7 @@ lifecycleextensions = "2.2.0"
 navigation = "2.5.2"
 material = "1.8.0-alpha01"
 percentLayout = "1.0.0"
-preference = "2.0.0"
+preference = "1.2.0"
 recyclerView = "1.2.1"
 swipeLayout = "1.1.0"
 testJunit = "1.1.3"
@@ -75,8 +75,8 @@ shimmer = "0.5.0"
 tooltip = "0.1.9"
 
 # ISD
-sdkstations = "3.0.2"
-sdkservices = "3.0.3"
+sdkstations = "3.0.3-SNAPSHOT"
+sdkservices = "3.0.4-SNAPSHOT"
 
 [libraries]
 # 1st party libs
