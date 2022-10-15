@@ -26,11 +26,12 @@ bugfender = "3.0.16"
 
 # https://firebase.google.com/docs/android/setup#kotlin+ktx_2
 firebaseCrashlyticsGradle = "2.9.2"
+firebaseBOM = "30.0.1"
 googleServices = "4.3.14"
 gradleVersions = "0.42.0"
 junit = "4.13.2"
 ktlintGradle = "11.0.0"
-roboelectric = "4.8.2"
+roboelectric = "4.9"
 timber = "5.0.1"
 
 # AndroidX
@@ -108,7 +109,6 @@ multiplatformSettings-test = { module = "com.russhwolf:multiplatform-settings-te
 napier-logger = { module = "io.github.aakira:napier", version.ref = "napier" }
 
 sqlDelight-android = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqlDelight" }
-sqlDelight-jvm = { module = "com.squareup.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
 sqlDelight-coroutinesExt = { module = "com.squareup.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
 sqlDelight-native = { module = "com.squareup.sqldelight:native-driver", version.ref = "sqlDelight" }
 sqlDelight-runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "sqlDelight" }
@@ -162,6 +162,7 @@ android_permissions_dispatcher = { module = "com.github.permissions-dispatcher:p
 android_permissions_dispatcher_processor = { module = "com.github.permissions-dispatcher:permissionsdispatcher-processor", version.ref = "permissionsDispatcher" }
 google_gms_maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playMaps" }
 google_gms_location = { module = "com.google.android.gms:play-services-location", version.ref = "playLocation" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBOM" }
 
 # Third-party
 material-dialogs = { module = "com.afollestad.material-dialogs:core", version.ref = "materialDialogs" }
@@ -170,15 +171,9 @@ android-material = { module = "com.google.android.material:material", version.re
 bugfender-sdk = { module = "com.bugfender.sdk:android", version.ref = "bugfender" }
 tooltip-library = { module = "com.github.vihtarb:tooltip", version.ref = "tooltip" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+advanced-recycler = { module = "com.h6ah4i.android.widget.advrecyclerview:advrecyclerview", version = "1.0.0" }
 
 # Tools
-gradlePlugin-android =  { module = "com.android.tools.build:gradle", version.ref = "androidGradle" }
-gradlePlugin-kotlinSerialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
-gradlePlugin-ktlint = { module = "org.jlleitschuh.gradle:ktlint-gradle", version.ref = "ktlintGradle" }
-gradlePlugin-sqlDelight = { module = "com.squareup.sqldelight:gradle-plugin", version.ref = "sqlDelight" }
-gradlePlugin-androidx-navigation = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation" }
-gradlePlugin-firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle"}
-gradlePlugin-google-services = {module = "com.google.gms:google-services", version.ref = "googleServices"}
 junit = { module = "junit:junit", version.ref = "junit" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 roboelectric = { module = "org.robolectric:robolectric", version.ref = "roboelectric" }
@@ -212,17 +207,6 @@ app-ui = [
     "androidx-recyclerview",
     "androidx-navigation-ui",
     "androidx-navigation-fragment"
-]
-gradlePlugins = [
-    "gradlePlugin-android",
-    "gradlePlugin-kotlinSerialization",
-    "gradlePlugin-ktlint",
-    "gradlePlugin-sqlDelight",
-]
-gradleAppPlugins = [
-    "gradlePlugin-androidx-navigation",
-    "gradlePlugin-firebase-crashlytics",
-    "gradlePlugin-google-services"
 ]
 ktor-common = [
     "ktor-client-core",
