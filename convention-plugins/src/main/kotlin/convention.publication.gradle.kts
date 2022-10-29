@@ -42,7 +42,7 @@ val javadocJar by tasks.registering(Jar::class) {
 fun getExtraString(name: String) = ext[name]?.toString()
 
 group = "com.intsoftdev"
-version = "3.0.3"
+version = "0.0.1"
 
 publishing {
     // Configure maven central repository
@@ -51,7 +51,6 @@ publishing {
             name = "sonatype"
             val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
             val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
-            println("version is $version")
             url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
             credentials {
                 username = getExtraString("ossrhUsername")
