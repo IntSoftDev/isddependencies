@@ -5,25 +5,24 @@ targetSdk = "34"
 compileSdk = "34"
 
 # Dependencies
-kotlin = "1.9.10"
+kotlin = "1.9.22"
 # KMP
-coroutines = "1.7.3"
-#  viewmodel 1.0.0-ALPHA-10 onwards has issue
-#  Cannot inline bytecode built with JVM target 11 into bytecode that is being built with JVM target 1.8. Please specify proper '-jvm-target' option
-kmm-viewmodel = "1.0.0-ALPHA-9"
-kmp-nativecoroutines = "1.0.0-ALPHA-18"
-kotlinxDateTime = "0.4.1"
+coroutines = "1.8.0"
+
+kmm-viewmodel = "1.0.0-ALPHA-19"
+kmp-nativecoroutines = "1.0.0-ALPHA-25"
+kotlinxDateTime = "0.5.0"
 kotlinxSerialization = "1.6.0"
-koin = "3.5.0"
-ktor = "2.3.4"
-multiplatformSettings = "1.0.0"
+koin = "3.5.3"
+ktor = "2.3.7"
+multiplatformSettings = "1.1.1"
 napier = "2.6.1"
 sqlDelight = "1.5.5"
 
 # Tools
 androidGradle = "7.4.2"
 bugfender = "3.1.1"
-kspPlugin = "1.9.10-1.0.13"
+kspPlugin = "1.9.22-1.0.17"
 
 # https://firebase.google.com/docs/android/setup#kotlin+ktx_2
 firebaseCrashlyticsGradle = "2.9.9"
@@ -32,37 +31,37 @@ googleServices = "4.3.15"
 gradleVersions = "0.47.0"
 junit = "4.13.2"
 ktlintGradle = "11.5.1"
-roboelectric = "4.9"
+roboelectric = "4.11.1"
 timber = "5.0.1"
 
 # AndroidX
 # https://developer.android.com/jetpack/androidx/versions
-activity = "1.6.1"
+activity = "1.8.2"
 appcompat = "1.6.1"
 constraintLayout = "2.1.4"
-coreKtx = "1.10.1"
-fragment = "1.6.1"
-lifecycle = "2.6.2"
+coreKtx = "1.12.0"
+fragment = "1.6.2"
+lifecycle = "2.7.0"
 navigation = "2.5.3"
-material = "1.8.0-alpha01"
+material = "1.11.0"
 percentLayout = "1.0.0"
-preference = "1.2.0"
-recyclerView = "1.3.0"
+preference = "1.2.1"
+recyclerView = "1.3.2"
 swipeLayout = "1.1.0"
 testJunit = "1.1.3"
 work = "2.8.1"
 
 # Compose
 # https://developer.android.com/jetpack/androidx/versions
-compose = "1.2.1"
-composeCompiler = "1.5.3"
-composeFoundation = "1.5.1"
-composeMaterial = "1.5.1"
-composeRuntime = "1.5.1"
-composeUi = "1.5.1"
+compose = "1.4.0"
+composeCompiler = "1.5.10"
+composeFoundation = "1.6.3"
+composeMaterial = "1.6.3"
+composeRuntime = "1.6.3"
+composeUi = "1.6.3"
 
 # Google
-accompanistSwipe = "0.28.0"
+accompanistSwipe = "0.34.0"
 googleBilling = "5.2.1"
 gson = "2.8.6"
 permissionsDispatcher = "4.9.1"
@@ -76,8 +75,8 @@ shimmer = "0.5.0"
 tooltip = "0.1.9"
 
 # ISD
-nrstations = "0.0.54-SNAPSHOT"
-nrservices = "0.0.53-SNAPSHOT"
+nrstations = "0.0.6-SNAPSHOT"
+nrservices = "0.0.6-SNAPSHOT"
 
 [libraries]
 # 1st party libs
