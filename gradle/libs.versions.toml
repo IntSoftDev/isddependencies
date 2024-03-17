@@ -59,6 +59,8 @@ composeFoundation = "1.6.3"
 composeMaterial = "1.6.3"
 composeRuntime = "1.6.3"
 composeUi = "1.6.3"
+composeNavigation = "2.7.7"
+composeMaps = "2.7.2"
 
 # Google
 accompanistSwipe = "0.34.0"
@@ -131,6 +133,7 @@ androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmode
 androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
 androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
 androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation"}
 androidx-percentlayout = { module = "androidx.percentlayout:percentlayout", version.ref = "percentLayout" }
 androidx-preference = { module = "androidx.preference:preference", version.ref = "preference" }
 androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerView" }
@@ -147,6 +150,7 @@ compose-material = { module = "androidx.compose.material:material", version.ref 
 compose-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "compose" }
 compose-viewbinding = { module = "androidx.compose.ui:ui-viewbinding", version.ref = "compose" }
 compose-rx = { module = "androidx.compose.runtime:runtime-rxjava2", version.ref = "compose" }
+compose-maps = { module = "com.google.maps.android:maps-compose", version.ref = "composeMaps" }
 
 # Google
 google-accompanist-swipeRefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwipe" }
