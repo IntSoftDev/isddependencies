@@ -54,6 +54,7 @@ work = "2.8.1"
 # Compose
 # https://developer.android.com/jetpack/androidx/versions
 compose = "1.4.0"
+composeMaterial3 = "1.2.1"
 composeCompiler = "1.5.10"
 composeFoundation = "1.6.3"
 composeMaterial = "1.6.3"
@@ -77,8 +78,8 @@ shimmer = "0.5.0"
 tooltip = "0.1.9"
 
 # ISD
-nrstations = "0.0.6-SNAPSHOT"
-nrservices = "0.0.6-SNAPSHOT"
+nrstations = "0.0.61"
+nrservices = "0.0.61-SNAPSHOT"
 
 [libraries]
 # 1st party libs
@@ -143,6 +144,7 @@ androidx-work = { module = "androidx.work:work-runtime-ktx", version.ref = "work
 
 # Compose
 compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "composeCompiler" }
+compose-material3 = {module = "androidx.compose.material3:material3", version.ref = "composeMaterial3" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
