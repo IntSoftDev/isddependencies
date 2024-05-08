@@ -16,8 +16,9 @@ kotlinxSerialization = "1.6.0"
 koin = "3.5.3"
 ktor = "2.3.7"
 multiplatformSettings = "1.1.1"
-napier = "2.6.1"
+napier = "2.7.1"
 sqlDelight = "1.5.5"
+turbine = "1.1.0"
 
 # Tools
 androidGradle = "7.4.2"
@@ -78,7 +79,7 @@ shimmer = "0.5.0"
 tooltip = "0.1.9"
 
 # ISD
-nrstations = "0.0.61"
+nrstations = "1.0.0-ALPHA-3"
 nrservices = "0.0.61-SNAPSHOT"
 
 [libraries]
@@ -109,6 +110,8 @@ multiplatformSettings-common = { module = "com.russhwolf:multiplatform-settings"
 multiplatformSettings-test = { module = "com.russhwolf:multiplatform-settings-test", version.ref = "multiplatformSettings" }
 
 napier-logger = { module = "io.github.aakira:napier", version.ref = "napier" }
+
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
 
 sqlDelight-android = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqlDelight" }
 sqlDelight-jvm = { module = "com.squareup.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
