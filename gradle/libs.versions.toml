@@ -81,8 +81,8 @@ shimmer = "0.5.0"
 tooltip = "0.1.9"
 
 # ISD
-nrstations = "1.0.0-ALPHA-4"
-nrservices = "0.0.61-SNAPSHOT"
+nrstations = "1.0.0-ALPHA-5-SNAPSHOT"
+nrservices = "0.0.7-SNAPSHOT"
 
 [libraries]
 # 1st party libs
