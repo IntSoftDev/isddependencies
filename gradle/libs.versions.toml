@@ -5,12 +5,12 @@ targetSdk = "34"
 compileSdk = "34"
 
 # Dependencies
-kotlin = "1.9.22"
+kotlin = "1.9.23"
 # KMP
 coroutines = "1.8.0"
 
 kmm-viewmodel = "1.0.0-ALPHA-19"
-kmp-nativecoroutines = "1.0.0-ALPHA-25"
+kmp-nativecoroutines = "1.0.0-ALPHA-28"
 kotlinxDateTime = "0.5.0"
 kotlinxSerialization = "1.6.0"
 koin = "3.5.3"
@@ -23,7 +23,7 @@ turbine = "1.1.0"
 # Tools
 androidGradle = "7.4.2"
 bugfender = "3.1.1"
-kspPlugin = "1.9.22-1.0.17"
+kspPlugin = "1.9.23-1.0.20"
 
 # https://firebase.google.com/docs/android/setup#kotlin+ktx_2
 firebaseCrashlyticsGradle = "2.9.9"
@@ -56,13 +56,14 @@ work = "2.8.1"
 # https://developer.android.com/jetpack/androidx/versions
 compose = "1.4.0"
 composeMaterial3 = "1.2.1"
-composeCompiler = "1.5.10"
+composeCompiler = "1.5.13"
 composeFoundation = "1.6.3"
 composeMaterial = "1.6.3"
 composeRuntime = "1.6.3"
 composeUi = "1.6.3"
 composeNavigation = "2.7.7"
 composeMaps = "2.7.2"
+compose-plugin = "1.6.2"
 
 # Google
 accompanistSwipe = "0.34.0"
@@ -79,7 +80,7 @@ shimmer = "0.5.0"
 tooltip = "0.1.9"
 
 # ISD
-nrstations = "1.0.0-ALPHA-3"
+nrstations = "1.0.0-ALPHA-4"
 nrservices = "0.0.61-SNAPSHOT"
 
 [libraries]
@@ -182,10 +183,18 @@ kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotl
 roboelectric = { module = "org.robolectric:robolectric", version.ref = "roboelectric" }
 
 [plugins]
+androidApplication = { id = "com.android.application", version.ref = "androidGradle" }
+androidLibrary = { id = "com.android.library", version.ref = "androidGradle" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle" }
 gradleVersions = { id = "com.github.ben-manes.versions", version.ref = "gradleVersions" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "kspPlugin" }
-kmp-nativecoroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "kmp-nativecoroutines" }
+kmpNativeCoroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "kmp-nativecoroutines" }
+sqlDelight = { id = "com.squareup.sqldelight", version.ref = "sqlDelight" }
+cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 [bundles]
 app-ui = [
