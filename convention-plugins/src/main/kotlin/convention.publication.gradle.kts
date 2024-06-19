@@ -42,7 +42,7 @@ val javadocJar by tasks.registering(Jar::class) {
 fun getExtraString(name: String) = ext[name]?.toString()
 
 group = "com.intsoftdev"
-version = "1.0.0-ALPHA-5"
+version = "1.0.0-ALPHA-12"
 
 publishing {
     // Configure maven central repository
@@ -90,8 +90,17 @@ publishing {
     }
 }
 
-// Signing artifacts. Signing.* extra properties values will be used
+tasks.withType<AbstractPublishToMaven>().configureEach {
+    val signingTasks = tasks.withType<Sign>()
+    mustRunAfter(signingTasks)
+}
 
+// Signing artifacts. Signing.* extra properties values will be used
 signing {
+    useInMemoryPgpKeys(
+        getExtraString("signing.keyId"),
+        getExtraString("signing.key"),
+        getExtraString("signing.password")
+    )
     sign(publishing.publications)
 }
