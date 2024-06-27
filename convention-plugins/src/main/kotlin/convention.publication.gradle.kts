@@ -42,7 +42,7 @@ val javadocJar by tasks.registering(Jar::class) {
 fun getExtraString(name: String) = ext[name]?.toString()
 
 group = "com.intsoftdev"
-version = "1.0.0-ALPHA-12"
+version = "1.0.0-ALPHA-13-SNAPSHOT"
 
 publishing {
     // Configure maven central repository
