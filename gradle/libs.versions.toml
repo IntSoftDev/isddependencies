@@ -14,9 +14,9 @@ coroutines = "1.9.0"
 kmp-viewmodel = "1.0.0-BETA-7"
 kmp-nativecoroutines = "1.0.0-ALPHA-37"
 kotlinxDateTime = "0.6.1"
+kotlinxSerializationJson = "1.7.3"
 koin = "4.1.0-Beta1"
 konnection = "1.4.3"
-# experimental Ktor update to fix memAllocs found in Instruments Leaks on iOS
 ktor = "3.0.1"
 multiplatformSettings = "1.2.0"
 napier = "2.7.1"
@@ -75,6 +75,7 @@ advancedRecycler = "1.0.0"
 materialDialogs = "3.3.0"
 shimmer = "0.5.0"
 tooltip = "0.2.0"
+wheelpicker = "1.1.11"
 
 # ISD
 nrstations = "1.0.0-ALPHA-10"
@@ -100,6 +101,8 @@ ktor-common-serialization = { module = "io.ktor:ktor-client-serialization", vers
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 
 kotlinx-dateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDateTime" }
+
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 
 kmp-viewmodel = { module = "com.rickclephas.kmp:kmp-observableviewmodel-core", version.ref = "kmp-viewmodel" }
 
@@ -131,7 +134,8 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayout" }
 androidx-core = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
-androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose-android", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
 androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
@@ -173,6 +177,7 @@ bugfender-sdk = { module = "com.bugfender.sdk:android", version.ref = "bugfender
 tooltip-library = { module = "com.github.vihtarb:tooltip", version.ref = "tooltip" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 advanced-recycler = { module = "com.h6ah4i.android.widget.advrecyclerview:advrecyclerview", version.ref = "advancedRecycler" }
+wheel-picker-compose = { module = "com.github.commandiron:WheelPickerCompose", version.ref = "wheelpicker"}
 
 # Tools
 junit = { module = "junit:junit", version.ref = "junit" }
@@ -206,7 +211,7 @@ app-ui = [
     "compose-rx",
     "google-accompanist-swipeRefresh",
     "androidx-core",
-    "androidx-lifecycle-runtime",
+    "androidx-lifecycle-runtime-ktx",
     "androidx-lifecycle-viewmodel",
     "androidx-lifecycle-livedata",
     "androidx-activity-exts",
