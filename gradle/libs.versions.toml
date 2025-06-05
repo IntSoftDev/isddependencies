@@ -5,27 +5,29 @@ targetSdk = "35"
 compileSdk = "35"
 
 # Dependencies
-kotlin = "2.0.21"
-kspPlugin = "2.0.21-1.0.25"
+kotlin = "2.1.10"
+kspPlugin = "2.1.10-1.0.30"
 
 # KMP
-coroutines = "1.9.0"
-
-kmp-viewmodel = "1.0.0-BETA-7"
-kmp-nativecoroutines = "1.0.0-ALPHA-37"
-kotlinxDateTime = "0.6.1"
-kotlinxSerializationJson = "1.7.3"
-koin = "4.1.0-Beta1"
+coroutines = "1.10.1"
+compose-multiplatform = "1.8.1"
+composeIcons = "1.7.3"
+kmp-viewmodel = "1.0.0-BETA-9"
+kmp-nativecoroutines = "1.0.0-ALPHA-39"
+kotlinxDateTime = "0.6.2"
+kotlinxSerializationJson = "1.8.0"
+koin = "4.1.0-Beta8"
 konnection = "1.4.3"
-ktor = "3.0.1"
-multiplatformSettings = "1.2.0"
+ktor = "3.1.0"
+multiplatformSettings = "1.3.0"
 napier = "2.7.1"
 sqlDelight = "2.0.2"
 turbine = "1.2.0"
 
 # Tools
-androidGradle = "8.7.0"
+androidGradle = "8.7.3"
 bugfender = "3.3.3"
+maven-publish = "0.30.0"
 
 # https://firebase.google.com/docs/android/setup#kotlin+ktx_2
 firebaseCrashlyticsGradle = "3.0.1"
@@ -44,7 +46,7 @@ appcompat = "1.7.0"
 constraintLayout = "2.2.0"
 coreKtx = "1.15.0"
 fragment = "1.8.5"
-lifecycle = "2.8.7"
+lifecycle = "2.8.4"
 navigation = "2.8.4"
 material = "1.13.0-alpha07"
 percentLayout = "1.0.0"
@@ -54,12 +56,13 @@ swipeLayout = "1.1.0"
 testJunit = "1.1.3"
 work = "2.9.1"
 secretsGradle = "2.0.1"
+androidx-ui-tooling = "1.7.4"
 
 # Compose
 # https://developer.android.com/jetpack/androidx/versions
-compose = "1.7.5"
-composeMaterial3 = "1.3.1"
-composeNavigation = "2.8.4"
+compose = "1.8.1"
+composeMaterial3 = "1.3.2"
+composeNavigation = "2.9.0-beta01"
 composeMaps = "6.2.1"
 
 # Google
@@ -75,17 +78,18 @@ advancedRecycler = "1.0.0"
 materialDialogs = "3.3.0"
 shimmer = "0.5.0"
 tooltip = "0.2.0"
-wheelpicker = "1.1.11"
+wheelpickercompose = "1.1.11"
 
 # ISD
-nrstations = "1.0.0-ALPHA-10"
-nrservices = "0.1.3-SNAPSHOT"
+nrstations = "1.0.0-ALPHA-12"
+nrservices = "0.1.4"
+wheelpickerisd = "1.0.0-SNAPSHOT"
 
 [libraries]
 # 1st party libs
 intsoftdev-stations = { module = "com.intsoftdev:nrstations", version.ref = "nrstations" }
 intsoftdev-services = { module = "com.intsoftdev:nrservices", version.ref = "nrservices" }
-
+intsoftdev-wheelpicker = { module = "com.intsoftdev:datetime-wheel-picker", version.ref = "wheelpickerisd" }
 # KMP
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
@@ -110,6 +114,11 @@ multiplatformSettings-common = { module = "com.russhwolf:multiplatform-settings"
 multiplatformSettings-serialization = { module = "com.russhwolf:multiplatform-settings-serialization", version.ref = "multiplatformSettings" }
 multiplatformSettings-test = { module = "com.russhwolf:multiplatform-settings-test", version.ref = "multiplatformSettings" }
 
+# JetBrains Compose Multiplatform
+jetbrains-navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
+jetbrains-material-core = { module = "org.jetbrains.compose.material:material-icons-core", version.ref = "composeIcons" }
+jetbrains-lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+
 konnection = { module = "dev.tmapps:konnection", version.ref = "konnection" }
 napier-logger = { module = "io.github.aakira:napier", version.ref = "napier" }
 
@@ -123,7 +132,10 @@ sqlDelight-runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sq
 
 # Koin DI
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-android-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin"}
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin"}
 koin-workmanager = { module = "io.insert-koin:koin-androidx-workmanager", version.ref = "koin" }
 koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
 
@@ -147,6 +159,9 @@ androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version
 androidx-swipelayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swipeLayout" }
 androidx-test-junit = { module = "androidx.test.ext:junit-ktx", version.ref = "testJunit" }
 androidx-work = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-ui-tooling" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-ui-tooling" }
+
 
 # Compose
 compose-material3 = {module = "androidx.compose.material3:material3", version.ref = "composeMaterial3" }
@@ -177,7 +192,7 @@ bugfender-sdk = { module = "com.bugfender.sdk:android", version.ref = "bugfender
 tooltip-library = { module = "com.github.vihtarb:tooltip", version.ref = "tooltip" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 advanced-recycler = { module = "com.h6ah4i.android.widget.advrecyclerview:advrecyclerview", version.ref = "advancedRecycler" }
-wheel-picker-compose = { module = "com.github.commandiron:WheelPickerCompose", version.ref = "wheelpicker"}
+wheel-picker-compose = { module = "com.github.commandiron:WheelPickerCompose", version.ref = "wheelpickercompose"}
 
 # Tools
 junit = { module = "junit:junit", version.ref = "junit" }
@@ -188,6 +203,7 @@ roboelectric = { module = "org.robolectric:robolectric", version.ref = "roboelec
 androidApplication = { id = "com.android.application", version.ref = "androidGradle" }
 androidLibrary = { id = "com.android.library", version.ref = "androidGradle" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle" }
 gradleVersions = { id = "com.github.ben-manes.versions", version.ref = "gradleVersions" }
@@ -199,6 +215,7 @@ sqlDelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
 cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 secrets-gradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsGradle" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
 
 [bundles]
 app-ui = [
