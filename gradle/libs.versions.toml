@@ -5,49 +5,49 @@ targetSdk = "35"
 compileSdk = "35"
 
 # Dependencies
-kotlin = "2.1.10"
-kspPlugin = "2.1.10-1.0.30"
+kotlin = "2.1.21"
+kspPlugin = "2.1.21-2.0.1"
 
 # KMP
-coroutines = "1.10.1"
+coroutines = "1.10.2"
 compose-multiplatform = "1.8.1"
 composeIcons = "1.7.3"
-kmp-viewmodel = "1.0.0-BETA-9"
-kmp-nativecoroutines = "1.0.0-ALPHA-39"
+kmp-viewmodel = "1.0.0-BETA-11"
+kmp-nativecoroutines = "1.0.0-ALPHA-44"
 kotlinxDateTime = "0.6.2"
-kotlinxSerializationJson = "1.8.0"
+kotlinxSerializationJson = "1.8.1"
 koin = "4.1.0-Beta8"
 konnection = "1.4.3"
-ktor = "3.1.0"
+ktor = "3.1.3"
 multiplatformSettings = "1.3.0"
 napier = "2.7.1"
-sqlDelight = "2.0.2"
+sqlDelight = "2.1.0"
 turbine = "1.2.0"
 
 # Tools
-androidGradle = "8.7.3"
-bugfender = "3.3.3"
-maven-publish = "0.30.0"
+androidGradle = "8.10.0"
+bugfender = "3.4.1"
+maven-publish = "0.32.0"
 
 # https://firebase.google.com/docs/android/setup#kotlin+ktx_2
 firebaseCrashlyticsGradle = "3.0.1"
-firebaseBOM = "33.6.0"
+firebaseBOM = "33.14.0"
 googleServices = "4.4.2"
-gradleVersions = "0.51.0"
+gradleVersions = "0.52.0"
 junit = "4.13.2"
-ktlintGradle = "12.1.1"
+ktlintGradle = "12.3.0"
 roboelectric = "4.11.1"
 timber = "5.0.1"
 
 # AndroidX
 # https://developer.android.com/jetpack/androidx/versions
-activity = "1.9.3"
-appcompat = "1.7.0"
+activity = "1.10.1"
+appcompat = "1.7.1"
 constraintLayout = "2.2.0"
-coreKtx = "1.15.0"
-fragment = "1.8.5"
-lifecycle = "2.8.4"
-navigation = "2.8.4"
+coreKtx = "1.16.0"
+fragment = "1.8.8"
+lifecycle = "2.9.0"
+navigation = "2.9.0"
 material = "1.13.0-alpha07"
 percentLayout = "1.0.0"
 preference = "1.2.1"
@@ -78,12 +78,11 @@ advancedRecycler = "1.0.0"
 materialDialogs = "3.3.0"
 shimmer = "0.5.0"
 tooltip = "0.2.0"
-wheelpickercompose = "1.1.11"
 
 # ISD
-nrstations = "1.0.0-ALPHA-12"
-nrservices = "0.1.4"
-wheelpickerisd = "1.0.0-SNAPSHOT"
+nrstations = "1.0.0-ALPHA-13"
+nrservices = "0.1.5"
+wheelpickerisd = "1.0.1-SNAPSHOT"
 
 [libraries]
 # 1st party libs
@@ -192,7 +191,6 @@ bugfender-sdk = { module = "com.bugfender.sdk:android", version.ref = "bugfender
 tooltip-library = { module = "com.github.vihtarb:tooltip", version.ref = "tooltip" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 advanced-recycler = { module = "com.h6ah4i.android.widget.advrecyclerview:advrecyclerview", version.ref = "advancedRecycler" }
-wheel-picker-compose = { module = "com.github.commandiron:WheelPickerCompose", version.ref = "wheelpickercompose"}
 
 # Tools
 junit = { module = "junit:junit", version.ref = "junit" }
