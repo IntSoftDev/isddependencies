@@ -85,7 +85,7 @@ tooltip = "0.2.0"
 
 # ISD
 nrstations = "1.0.0-ALPHA-15"
-nrservices = "0.1.9"
+nrservices = "0.1.10"
 wheelpickerisd = "1.0.2"
 
 [libraries]
