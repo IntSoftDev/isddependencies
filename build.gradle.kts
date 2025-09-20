@@ -1,13 +1,24 @@
 import com.vanniktech.maven.publish.SonatypeHost
+import java.util.Properties
 
-// https://vanniktech.github.io/gradle-maven-publish-plugin/central/
+// Load secrets.properties
+val secretsProperties = Properties()
+val secretsFile = rootProject.file("secrets.properties")
+if (secretsFile.exists()) {
+    secretsProperties.load(secretsFile.inputStream())
+    // Apply secrets as project properties
+    secretsProperties.forEach { key, value ->
+        project.ext.set(key.toString(), value)
+    }
+}
+
 plugins {
     `version-catalog`
-    id("com.vanniktech.maven.publish") version "0.32.0"
+    alias(libs.plugins.maven.publish)
 }
 
 group = "com.intsoftdev"
-version = "1.0.0-ALPHA-25"
+version = "1.0.0-ALPHA-26"
 
 catalog {
     versionCatalog {
