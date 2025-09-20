@@ -13,11 +13,18 @@ if (secretsFile.exists()) {
 }
 
 plugins {
+    `version-catalog`
     alias(libs.plugins.maven.publish)
 }
 
 group = "com.intsoftdev"
 version = "1.0.0-ALPHA-26"
+
+catalog {
+    versionCatalog {
+        from(files("./gradle/libs.versions.toml"))
+    }
+}
 
 mavenPublishing {
     coordinates(
