@@ -86,16 +86,16 @@ shimmer = "0.5.0"
 tooltip = "0.2.0"
 
 # ISD
-nrstations = "1.0.0-ALPHA-15"
-nrservices = "0.1.10"
-tflstatus = "0.0.1"
+nrstations = "1.0.0-ALPHA-16"
+nrservices = "0.1.11"
+tflstatus = "0.0.2"
 wheelpickerisd = "1.0.2"
 
 [libraries]
 # 1st party libs
 intsoftdev-stations = { module = "com.intsoftdev:nrstations", version.ref = "nrstations" }
 intsoftdev-services = { module = "com.intsoftdev:nrservices", version.ref = "nrservices" }
-intsoftdev-tflstatus = { module = "com.intsoftdev:tflstatus", version.ref = "tflstatus" }
+intsoftdev-tflstatus-core = { module = "com.intsoftdev:tflstatus-core", version.ref = "tflstatus" }
 intsoftdev-tflstatus-ui = { module = "com.intsoftdev:tflstatus-ui", version.ref = "tflstatus" }
 intsoftdev-wheelpicker = { module = "com.intsoftdev:datetime-wheel-picker", version.ref = "wheelpickerisd" }
 # KMP
