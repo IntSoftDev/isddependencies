@@ -6,9 +6,9 @@ val secretsProperties = Properties()
 val secretsFile = rootProject.file("secrets.properties")
 if (secretsFile.exists()) {
     secretsProperties.load(secretsFile.inputStream())
-    // Apply secrets as project properties
-    secretsProperties.forEach { key, value ->
-        project.ext.set(key.toString(), value)
+    // Apply secrets as project properties without using Java 8 `forEach`
+    secretsProperties.stringPropertyNames().forEach { key ->
+        project.extensions.extraProperties.set(key, secretsProperties.getProperty(key))
     }
 }
 
@@ -18,7 +18,7 @@ plugins {
 }
 
 group = "com.intsoftdev"
-version = "1.0.0-ALPHA-26"
+version = "1.0.0-ALPHA-27"
 
 catalog {
     versionCatalog {
