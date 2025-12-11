@@ -90,9 +90,9 @@ tooltip = "0.2.0"
 
 # ISD
 nrstations = "1.0.0-ALPHA-17"
-nrservices = "0.1.11"
+nrservices = "0.1.12"
 tflstatus = "0.0.3"
-wheelpickerisd = "1.0.2"
+wheelpickerisd = "1.0.3"
 
 [libraries]
 # 1st party libs
