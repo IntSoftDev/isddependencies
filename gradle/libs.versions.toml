@@ -91,10 +91,10 @@ tooltip = "0.2.0"
 atomicfu = "0.24.0"
 
 # ISD
-nrstations = "1.0.0-ALPHA-17"
+nrstations = "1.0.0-ALPHA-18"
 nrservices = "0.1.13"
-tflstatus = "0.0.3"
-wheelpickerisd = "1.0.3"
+tflstatus = "0.0.4"
+wheelpickerisd = "1.0.4"
 
 [libraries]
 # 1st party libs
