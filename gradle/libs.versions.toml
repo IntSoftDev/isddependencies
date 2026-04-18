@@ -92,7 +92,7 @@ atomicfu = "0.24.0"
 
 # ISD
 nrstations = "1.0.0-ALPHA-19"
-nrservices = "0.1.14"
+nrservices = "0.1.15"
 tflstatus = "0.0.4"
 wheelpickerisd = "1.0.4"
 
