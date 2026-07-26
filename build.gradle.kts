@@ -18,7 +18,7 @@ plugins {
 }
 
 group = "com.intsoftdev"
-version = "1.0.0-ALPHA-33"
+version = "1.0.0-ALPHA-34"
 
 catalog {
     versionCatalog {
